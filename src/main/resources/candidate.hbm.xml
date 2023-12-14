@@ -1,0 +1,24 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="org.example.entity.Candidate" table="candidate">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" />
+        </property>
+        <property name="surname" type="string">
+            <column name="surname" />
+        </property>
+        <property name="patronymic" type="string">
+            <column name="patronymic" />
+        </property>
+        <property name="employed" type="boolean">
+            <column name="employed" />
+        </property>
+    </class>
+</hibernate-mapping>
