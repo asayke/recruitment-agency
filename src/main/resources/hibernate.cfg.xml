@@ -3,23 +3,28 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-
+<!--        Диалект - указываешь конкретный диалект для конректой бд(пострегс)-->
         <property name = "hibernate.dialect">
             org.hibernate.dialect.PostgreSQLDialect
         </property>
+
+<!--&lt;!&ndash;        Драйвер- ПО, которое обеспечивает работу хибернейта с постгресом->-->
 
         <property name = "hibernate.connection.driver_class">
             org.postgresql.Driver
         </property>
 
+<!--        Выводит в консоль составленный sql запрос на основе джава кода-->
         <property name="hibernate.show_sql">
             true
         </property>
 
+<!--        Создаёт бд на старте приложение(сейчас не особо нужно, по идее можно удалить)-->
         <property name="hibernate.hbm2ddl">
             create
         </property>
 
+<!--        URL базы данных-->
         <property name = "hibernate.connection.url">
             jdbc:postgresql://localhost/agency
         </property>
@@ -32,7 +37,5 @@
             postgres
         </property>
 
-<!--        <mapping class="org.example.entity.Candidate"/>-->
-<!--        <mapping class="org.example.entity.Vacancy"/>-->
     </session-factory>
 </hibernate-configuration>

@@ -8,4 +8,6 @@ public interface CandidateRepository {
     Candidate getById(Long id);
 
     void setEmployedStatus(Long id, Boolean employedStatus);
+
+    boolean login(String username, String password);
 }

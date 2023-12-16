@@ -20,5 +20,9 @@ public class Vacancy {
 
     String description;
 
+    String profession;
+
+    String location;
+
     Boolean active;
 }
