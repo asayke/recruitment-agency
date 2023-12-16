@@ -24,17 +24,17 @@ public class App
 //        vacancyRepository.save(vacancy1);
 //        vacancyRepository.save(vacancy2);
 //
-//        Candidate candidate = new Candidate();
-//        candidate.setName("Liza");
-//        candidate.setSurname("Kolodiazhnya");
-//        candidate.setPatronymic("Alexandrovna");
-//        candidate.setAge(18);
-//        candidate.setGender("Женский");
-//        candidate.setUsername("molinka");
-//        candidate.setPassword("molinka");
-////
-//        CandidateRepository candidateRepository = new CandidateRepositoryImpl();
-//        candidateRepository.save(candidate);
+        Candidate candidate = new Candidate();
+        candidate.setName("Liza");
+        candidate.setSurname("Kolodiazhnya");
+        candidate.setPatronymic("Alexandrovna");
+        candidate.setAge(18);
+        candidate.setGender("Женский");
+        candidate.setUsername("molinka");
+        candidate.setPassword("molinka");
+//
+        CandidateRepository candidateRepository = new CandidateRepositoryImpl();
+        candidateRepository.save(candidate);
 
 //        candidateRepository.setEmployedStatus(2L, true);
 //        Candidate byId = candidateRepository.getById(2L);
@@ -44,7 +44,7 @@ public class App
 //        Vacancy byId1 = vacancyRepository.getById(4L);
 //        System.out.println(byId1);
 
-        CandidateService candidateService = new CandidateService();
-        System.out.println(candidateService.login("molinka", "molinka"));
+//        CandidateService candidateService = new CandidateService();
+//        System.out.println(candidateService.login("molinka", "molinka"));
     }
 }
